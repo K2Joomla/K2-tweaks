@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<author>Matt Thomas</author>
+	<authorEmail>matt@betweenbrain.com</authorEmail>
+	<authorUrl>http://betweenbrain.com</authorUrl>
+	<copyright>(C) 2014 Matt Thomas. All rights reserved.</copyright>
+	<creationDate>September 19, 2014</creationDate>
+	<description>PLG_SYSTEM_K2INTERFACETWEAKS_DESC</description>
+	<license>GNU/GPL v2 or later</license>
+	<name>PLG_SYSTEM_K2INTERFACETWEAKS</name>
+	<version>0.1-alpha</version>
+	<files>
+		<filename plugin="k2interfacetweaks">k2interfacetweaks.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_k2interfacetweaks.ini</language>
+		<language tag="ru-RU">ru-RU.plg_system_k2interfacetweaks.ini</language>
+	</languages>
+
+</extension>
