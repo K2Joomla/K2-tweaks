@@ -37,7 +37,7 @@ class plgSystemK2interfacetweaks extends JPlugin
 
 		if ($this->app->isAdmin() && JFactory::getApplication()->input->getCmd('option') == 'com_k2')
 		{
-			$buffer = JApplicationWeb::getBody();
+			$buffer = JFactory::getApplication()->getBody();
 
 			switch (JFactory::getApplication()->input->getCmd('view'))
 			{
@@ -60,7 +60,7 @@ class plgSystemK2interfacetweaks extends JPlugin
 						$buffer = preg_replace($pattern, '', $buffer);
 					}
 
-					JApplicationWeb::setBody($buffer);
+					JFactory::getApplication()->setBody($buffer);
 					break;
 			}
 
