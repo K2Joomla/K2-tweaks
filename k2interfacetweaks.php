@@ -44,16 +44,24 @@ class plgSystemK2interfacetweaks extends JPlugin
 				case('item') :
 
 					// Hide Image Tab and Content
-					$patterns[] = '/<li\b[^>]*id=\"tabImage\"[^>]*>(.*?)<\/li>/i';
-					$patterns[] = '/<!-- Tab image -->[^!]*(.*?)<\/div>/i';
+					//$patterns[] = '/<li\b[^>]*id=\"tabImage\"[^>]*>(.*?)<\/li>/i';
+					//$patterns[] = '/<!-- Tab image -->[^!]*(.*?)<\/div>/i';
 
 					// Hide Image Gallery Tab and Content
 					$patterns[] = '/<li\b[^>]*id=\"tabImageGallery\"[^>]*>(.*?)<\/li>/i';
 					$patterns[] = '/<!-- Tab image gallery -->[^!]*(.*?)<\/div>/i';
 
+					// Hide Video Tab and Content
+					$patterns[] = '/<li\b[^>]*id=\"tabVideo\"[^>]*>(.*?)<\/li>/i';
+					$patterns[] = '/<!-- Tab video -->[^!]*(.*?)<\/div>/i';
+
+					// Hide Extrafields Tab and Content
+					$patterns[] = '/<li\b[^>]*id=\"tabExtraFields\"[^>]*>(.*?)<\/li>/i';
+					$patterns[] = '/<!-- Tab extra fields -->[^!]*(.*?)<\/div>/i';
+
 					// Hide Attachments Tab and Content
-					$patterns[] = '/<li\b[^>]*id=\"tabAttachments\"[^>]*>(.*?)<\/li>/i';
-					$patterns[] = '/<!-- Tab attachements -->[^!]*(.*?)<\/div>/i';
+					//$patterns[] = '/<li\b[^>]*id=\"tabAttachments\"[^>]*>(.*?)<\/li>/i';
+					//$patterns[] = '/<!-- Tab attachements -->[^!]*(.*?)<\/div>/i';
 
 					foreach ($patterns as $pattern)
 					{
